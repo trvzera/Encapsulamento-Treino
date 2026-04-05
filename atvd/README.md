@@ -43,9 +43,23 @@
 
 == PARTE 2 ==
 
-O que muda visualmente na estrutura de um arquivo JSON quando precisamos armazenar vários itens (uma lista) em vez de apenas um objeto único?
-Explique com suas palavras o que o Dart entende quando tipamos uma variável como List<Map<String, dynamic>> após ler um arquivo JSON. O que é a Lista e o que é o Map neste contexto?
-Qual é a principal diferença de legibilidade e funcionamento entre um laço for tradicional (usando i++) e o laço for-in (ex: for (var item in dados))?
-Ao criar uma lista para o nosso catálogo no Dart, usamos a tipagem List<Conteudo>. Baseado no conceito de Polimorfismo, por que essa lista aceita tanto objetos do tipo Filme quanto do tipo Serie?
+1. **O que muda visualmente na estrutura de um arquivo JSON quando precisamos armazenar vários itens (uma lista) em vez de apenas um objeto único?**
+   Adiciona o []
+
+2. **Explique com suas palavras o que o Dart entende quando tipamos uma variável como List<Map<String, dynamic>> após ler um arquivo JSON. O que é a Lista e o que é o Map neste contexto?**
+   Seria uma lista de dicionarios(maps), para armazenar os arquivos.
+
+3. **Qual é a principal diferença de legibilidade e funcionamento entre um laço for tradicional (usando i++) e o laço for-in (ex: for (var item in dados))?**
+   O segundo laco percorre o dicionario(map) ou a lista
+
+
+4. **Ao criar uma lista para o nosso catálogo no Dart, usamos a tipagem List<Conteudo>. Baseado no conceito de Polimorfismo, por que essa lista aceita tanto objetos do tipo Filme quanto do tipo Serie?**
+   
 Para que serve o método .map() em uma lista no Dart e por que costumamos colocar um .toList() logo após ele?
 
+
+O que aconteceu com o arquivo dados.json no seu computador logo após você executar o programa completo (passando pelo CREATE, DELETE e UPDATE DO ARQUIVO)?
+Se no passo 4 (CREATE) você tivesse adicionado um objeto da classe Serie em vez de Filme, o código daria erro? Por quê?
+Qual foi o maior benefício de ter criado o método toJson() dentro das classes filhas, em vez de tentar montar o Map manualmente direto no main.dart?
+Durante a leitura do JSON com o for-in, o seu Encapsulamento (o Setter de validação da classificação) continuou protegendo o sistema de dados negativos?
+Qual foi a etapa mais desafiadora da implementação do CRUD usando arquivos?
