@@ -47,10 +47,13 @@ void main(List<String> arguments) {
           } else {
             stdout.write('Nome do Novo Filme: ');
             String nome = stdin.readLineSync()!;
+
             stdout.write('Classificação do Novo Filme: ');
             int classificacao = int.parse(stdin.readLineSync()!);
+
             Filme adicionar = Filme(nome, id);
             adicionar.validarClassificacao = classificacao;
+
             catalogo.add(adicionar);
             print('✅ Filme cadastrado com sucesso');
           }
